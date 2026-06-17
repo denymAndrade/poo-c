@@ -20,6 +20,9 @@ public:
             cout << "Nota invalida!" << endl;
         }
      } 
+     void exibir_nota() const {
+        cout << "Nome do aluno: " << nome << ", Nota: " << nota << endl;
+     }
 };
 
 int main() {
@@ -27,7 +30,8 @@ int main() {
     aluno.setNome("Jose");
     aluno.setNota(8.5);
 
-    cout << "Nome do aluno: " << aluno.getNome() << ", Nota: " << aluno.getNota() << endl;
+
+    aluno.exibir_nota();
 
     return 0;
 }
